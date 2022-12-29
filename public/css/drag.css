@@ -1,0 +1,27 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background: #4ca1af9e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4c8aaf, #4ca1af9e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4c8aaf, #4ca1af9e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #fff;
+    list-style: none;
+}
+
+li.drag-sort-active {
+    background: transparent;
+    color: transparent;
+    border: 1px solid #4ca1af;
+}
+
+.drag-sort-active, li.drag-sort-active span, li.drag-sort-active svg {
+    background: transparent !important;
+    color: transparent !important;
+}
